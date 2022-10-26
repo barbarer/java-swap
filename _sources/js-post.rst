@@ -8,18 +8,19 @@ on it for about five minutes without solving it.
 
 Problems
 ==============
-.. activecode:: lccv1
+
+.. activecode:: js-swap-ac
    :language: java
    :autograde: unittest
 
-   Finish writing the code to swap the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value).
+   Finish writing the code to swap the values in a and b (so that a ends up with b's initial value and b ends up with a's initial value).
    ~~~~
    public class Test1
    {
       public static void main(String[] args)
       {
-          int x = 3;
-          int y = 5;
+          int x = 6;
+          int y = 2;
           int temp = 0;
 
           // swap the Values
@@ -43,10 +44,10 @@ Problems
         @Test
         public void test1()
         {
-            int x = 3;
-            int y = 5;
+            int a = 6;
+            int b = 2;
             int temp = 0;
-            String expect = "5\n1\3";
+            String expect = "2\n6\n";
             boolean passed = getResults(expect, output, "Expected output from main", true);
             assertTrue(passed);
         }
