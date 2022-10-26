@@ -23,9 +23,9 @@ Problems
           int y = 2;
           int temp = 0;
 
-          // swap the Values
+          // swap the values
 
-          // print the Values
+          // print the values
           System.out.println(x);
           System.out.println(y);
       }
