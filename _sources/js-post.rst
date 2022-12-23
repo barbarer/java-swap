@@ -23,6 +23,10 @@ Problems
           int y = 2;
           int temp = 0;
 
+          // print the values
+          System.out.println(x);
+          System.out.println(y);
+
           // swap the values
 
           // print the values
