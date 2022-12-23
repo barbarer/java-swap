@@ -51,7 +51,8 @@ Problems
             int a = 6;
             int b = 2;
             int temp = 0;
-            String expect = "2\n6\n";
+            String expect = "6\n2\n2\n6\n";
+            String output = getMethodOutput("main");
             boolean passed = getResults(expect, output, "Expected output from main", true);
             assertTrue(passed);
         }
