@@ -240,5 +240,5 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 
 # key_words
 key_words = "Java, swap, experiment"
-shelf_section = "java-swap"
+shelf_section = "Java Experiments"
 course_description = "This interactive ebook was created by a ITiCSE working group led by Dr. Barbara Ericson. "

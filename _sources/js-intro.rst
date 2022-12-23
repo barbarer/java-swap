@@ -8,15 +8,14 @@ Solving Mixed-up Code Problems
 ==================================
 
 If you see a problem like the one below you will need to put the mixed-up
-code in the correct order on the right side. You
-may need to indent the blocks as well.  There may also be extra blocks that are not
+code in the correct order on the right side.  There may also be extra blocks that are not
 needed in a correct solution that you can leave on the left side. Click the "Check" button
 to check your solution.
 
 See the video below for an example.
 
 .. youtube:: Rf7oWHlo-e0
-    :divid: iwgex1-parsons1-js
+    :divid: video-parsons1-js
     :optional:
     :width: 650
     :height: 415
@@ -84,11 +83,12 @@ than three blocks left.
 See the video below for an example.
 
 .. youtube:: QejZ7u642IU
-    :divid: iwgex1-parsons2-js
+    :divid: js-parsons2-help
     :optional:
     :width: 650
     :height: 415
     :align: center
+
 
 Solving Write Code Problems
 ==============================
@@ -112,31 +112,41 @@ Finish writing the code for the following problem.
 .. activecode:: intro-sample-write-code-triple-js
     :practice: T
     :autograde: unittest
+    :language: java
 
-    Write a function called ``triple(num)`` that takes a number ``num`` and
-    returns the number times 3. For example, ``triple(2)`` should return 6 and
-    ``triple(-1)`` should return -3.  Look below the code to check for any
-    compiler errors or the results
-    from the test cases.  Be sure to ``return`` the result.
+    Write code to print the cost per person for dinner. The cost is the total divided by
+    the number of people.
     ~~~~
-    def triple(num):
-        # write code here
 
-    print(triple(2))
-    print(triple(-1))
+
+    public class Test
+    {
+       public static void main(String[] args)
+       {
+           int num_people = 3;
+           double total = 33.60;
+
+           // print the cost per person
+       }
+    }
 
     ====
-    from unittest.gui import TestCaseGui
-    class myTests(TestCaseGui):
+    // should pass if/when they run code
+    import static org.junit.Assert.*;
+    import org.junit.*;;
+    import java.io.*;
 
-        def testOne(self):
-            self.assertEqual(triple(2),6,"triple(2)")
-            self.assertEqual(triple(3),9,"triple(3)")
-            self.assertEqual(triple(-1),-3,"triple(-1)")
-            self.assertEqual(triple(0),0,"triple(0)")
-            self.assertEqual(triple(11),33,"triple(11)")
-
-    myTests().main()
+    public class RunestoneTests extends CodeTestHelper
+    {
+         @Test
+         public void testMain() throws IOException
+         {
+             String output = getMethodOutput("main");
+             String expect = "11.2";
+             boolean passed = getResults(expect, output, "Expected output from main");
+             assertTrue(passed);
+         }
+    }
 
 Feedback
 ==================================
@@ -161,16 +171,8 @@ What to do next
 
         a = document.getElementById("jspt-practice")
 
-        // randomly pick one of two relative urls
-        var v = Math.floor(Math.random() * 9) + 1;
-        if (v % 2 == 0)
-        {
-              a.href = "js-parsons.html"
-        }
-        else
-        {
-               a.href = "js-write.html"
-        }
+        // go to Parsons
+        a.href = "js-parsons.html"
 
         };
     </script>

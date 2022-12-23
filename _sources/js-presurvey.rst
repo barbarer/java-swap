@@ -77,8 +77,17 @@ about the specified concept(s).
     :option_5: I am confident in my ability to use this concept in complex programs
     :results: instructor
 
-    Variables like x = 4
+    Variable declarations like *int x = 4;*
 
+.. poll:: js-prog-se-vars-8
+    :option_1: I am unfamiliar with this concept
+    :option_2: I know what it means, but have not used it in a program
+    :option_3: I have used this concept in a program, but am not confident about my ability to use it
+    :option_4: I am confident in my ability to use this concept in simple programs
+    :option_5: I am confident in my ability to use this concept in complex programs
+    :results: instructor
+
+    Variable assignments like *x = y;*
 
 Feedback
 ==================================
